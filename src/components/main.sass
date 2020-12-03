@@ -1,12 +1,16 @@
 $title: #1e1e28
 $text: #323232
+$black: #000000
 $white-1: #ffffff
 $white-2: #f2f2f2
+$white-3: #f0f0f0
 $yellow-1: #FACF64
 $gray-1: #646464
 $gray-2: #808080
+$gray-3: #969696
 $dark-1: #151515
 $dark-2: #0a0a0a
+$dark-3: #1e1e1e
 
 body
   font-family: interRegular
@@ -37,17 +41,48 @@ body
 
 .font-size-14
   font-size: 14px
+.font-size-15
+  font-size: 15px
 .font-size-18
   font-size: 18px
 .font-size-20
   font-size: 20px
+.font-size-22
+  font-size: 22px
 .font-size-45
   font-size: 45px
 
+.color-title
+  color: $title !important
+.color-text
+  color: $text !important
+.color-black
+  color: $black !important
 .color-white-1
-  color: $white-1
+  color: $white-1 !important
 .color-white-2
-  color: $white-2
+  color: $white-2 !important
+.color-white-3
+  color: $white-3 !important
+.color-gray-1
+  color: $gray-1 !important
+.color-gray-2
+  color: $gray-2 !important
+.color-gray-3
+  color: $gray-3 !important
+.color-dark-1
+  color: $dark-1 !important
+
+
+.background-yellow
+  background-color: $yellow-1
+.background-gray-3
+  background-color: $gray-3
+.background-image
+  position: relative
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
 
 .underline-yellow,
 .underline-yellow:hover
@@ -96,13 +131,40 @@ body
 .margin-left-64
   margin-left: 64px
 
-
 .border-none
   border: none
+.border-button
+  border: none
+  outline: none
+  box-shadow: none
+  &:focus
+    outline: none
+    box-shadow: none
 .border-circle
   border-radius: 999px
+.border-top-yellow
+  border-top: 5px solid $yellow-1
+
+.shadow-square-gray-3
+  box-shadow: 0 0 0 1px $gray-3
+
+.box-4x4
+  position: relative
+  display: block
+  width: 100%
+  padding-bottom: 100%
+.box-4x3
+  position: relative
+  display: block
+  width: 100%
+  padding-bottom: calc( 100% * 3 / 4 )
 
 @import "header/header.sass"
 @import "footer/footer.sass"
 @import "service/service.sass"
 @import "support/support.sass"
+@import "strategy/strategy.sass"
+@import "customer/customer.sass"
+@import "swiper/swiper-customer/swiper-customer.sass"
+@import "news/news.sass"
+@import "banner/banner.sass"

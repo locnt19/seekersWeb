@@ -1,34 +1,25 @@
-.topbar__main
-  max-width: 1240px
-  margin: 0 auto
-  display: flex
-  flex-direction: row
-  padding-top: 25px
-  padding-bottom: 50px
+.header__container
+  position: relative
+  height: 90px
+  padding-bottom: calc( 90px / 2 )
 
-.topbar__phone, .topbar__email, .topbar__folowUs
-  display: flex
-  flex-direction: row
+.header__navigate
+  height: 90px
+  background-color: $dark-3
+  z-index: 1030
+  position: absolute
+  top: calc( 100% - (90px / 2))
+  left: 50%
+  transform: translateX(-50%)
 
-.topbar__phone
-  flex-basis: 36%
+.header__logo
+  width: 275px
 
-.topbar__email
-  flex-basis: 33%
-
-.topbar__title
-  font-family: interRegular
-  color: gray
-  margin-right: 10px
-
-.topbar__value
-  font-family: interBold
-  text-decoration: underline solid #FACF64
-  text-underline-position: under
-
-.topbar__icon
-  font-family: interBold
-
-.topbar__folowUs i
-  margin-right: 5px
-  margin-left: 2px
+.header__menu--item
+  text-decoration: none
+  &:hover,
+  &.active
+    text-decoration: none
+    border-bottom: 3px solid $yellow-1
+  + .header__menu--item
+    margin-left: 16px
