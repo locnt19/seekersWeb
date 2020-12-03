@@ -1,9 +1,8 @@
 extends _layout.pug
 
 block var
-  -var title = 'Document'
+  -var title = 'Seekers'
 
 block main
-  section
-    h1 Hello from Theme-builder
-    img.lazy(src="img/gulp-pug-sass-bower.png" alt="not found")
+  include ../components/service/service.pug
+  include ../components/support/support.pug
