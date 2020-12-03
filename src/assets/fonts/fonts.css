@@ -1,0 +1,53 @@
+@font-face {
+  /* 100 */
+  font-family: interThin;
+  src: url(../fonts/Inter-Thin-slnt=0.ttf);
+}
+
+@font-face {
+  /* 200 */
+  font-family: interExtraLight;
+  src: url(../fonts/Inter-ExtraLight-slnt=0.ttf);
+}
+
+@font-face {
+  /* 300 */
+  font-family: interLight;
+  src: url(../fonts/Inter-Light-slnt=0.ttf);
+}
+
+@font-face {
+  /* 400 */
+  font-family: interRegular;
+  src: url(../fonts/Inter-Regular-slnt=0.ttf);
+}
+
+@font-face {
+  /* 500 */
+  font-family: interMedium;
+  src: url(../fonts/Inter-Medium-slnt=0.ttf);
+}
+
+@font-face {
+  /* 600 */
+  font-family: interSemiBold;
+  src: url(../fonts/Inter-SemiBold-slnt=0.ttf);
+}
+
+@font-face {
+  /* 700 */
+  font-family: interBold;
+  src: url(../fonts/Inter-Bold-slnt=0.ttf);
+}
+
+@font-face {
+  /* 800 */
+  font-family: interExtraBold;
+  src: url(../fonts/Inter-ExtraBold-slnt=0.ttf);
+}
+
+@font-face {
+  /* 900 */
+  font-family: interBlack;
+  src: url(../fonts/Inter-Black-slnt=0.ttf);
+}

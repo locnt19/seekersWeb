@@ -17,6 +17,7 @@
     "font-awesome": "^5.14.0",
     "mdi": "^5.5.55",
     "linearicons": "^1.0.2",
-    "vanilla-lazyload": "^17.1.0"
+    "vanilla-lazyload": "^17.1.0",
+    "bootstrap": "^4.5.3"
   }
 }

@@ -36,7 +36,7 @@ gulp.task('clean:all', function () {
 // IMPORT FONT ICON
 gulp.task('import:font-icon', function (done) {
   if (library.fonts.length > 0) {
-    return gulp.src(library.fonts).pipe(gulp.dest(path.font.dist));
+    return gulp.src(library.fonts).pipe(gulp.dest(path.webFonts.dist));
   }
   return done();
 });
@@ -50,7 +50,7 @@ gulp.task('import:webfont', function () {
 gulp.task('import:image', function () {
   return gulp
     .src(path.image.src)
-    .pipe(image())
+    // .pipe(image())
     .pipe(gulp.dest(path.image.dist));
 });
 

@@ -1,11 +1,11 @@
 {
   "global": {
     "fonts": [
-      "bower_components/mdi/fonts/*",
-      "bower_components/font-awesome/webfonts/*",
-      "bower_components/linearicons/dist/web-font/fonts/*"
+      "bower_components/font-awesome/webfonts/*"
     ],
     "css": [
+      "bower_components/font-awesome/css/all.min.css",
+      "bower_components/bootstrap/dist/css/bootstrap.min.css",
       "src/assets/fonts/fonts.css"
     ],
     "js": [
@@ -31,12 +31,15 @@
       "dist": "dist/js"
     },
     "image": {
-      "src": "src/assets/images/**/*.{svg,gif,png,jpg,jpeg,webp}",
+      "src": "src/assets/images/**/*.{svg,gif,png,jpg,jpeg,webp,PNG}",
       "dist": "dist/img"
     },
     "font": {
       "src": "src/assets/fonts/**/*.{woff2,woff,eot,ttf}",
       "dist": "dist/fonts"
+    },
+    "webFonts": {
+      "dist": "dist/webfonts"
     }
   },
   "PORT": 8000
