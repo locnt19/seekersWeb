@@ -61,4 +61,29 @@ $(document).ready(function () {
       prevEl: ".news__container .swr__button--prev",
     },
   });
+
+  new Swiper(".banner__container.swiper-container", {
+    speed: 1500,
+    slidesPerView: 1,
+    loop: true,
+    simulateTouch: false,
+    //#region effect
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    //#endregion
+    navigation: {
+      nextEl: ".banner__container .swr__button--next",
+      prevEl: ".banner__container .swr__button--prev",
+    },
+  });
 });
