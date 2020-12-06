@@ -16,44 +16,42 @@ footer.footer.border-top-yellow.padding-top-64.padding-bottom-64
               .mb-3.padding-left-32
                 form.footer__form(action="POST")
                   input.footer__form--input(type="text" name="email" placeholder="Your email address")
-                  button.footer__form--button(type="submit") SUBSCRIBE
+                  button.footer__form--button.hover-shadow-yellow(type="submit") SUBSCRIBE
           .col-auto
             .footer__item
               h3.footer__title.mb-3 MENU
               ul.list-unstyled.padding-left-32
                 li.text-uppercase
-                  a(href="#").footer__item--link About Us
+                  a(href="#").footer__item--link.hover-link About Us
                 li.text-uppercase
-                  a(href="#").footer__item--link Strategy
+                  a(href="#").footer__item--link.hover-link Strategy
                 li.text-uppercase
-                  a(href="#").footer__item--link Logistics
+                  a(href="#").footer__item--link.hover-link Logistics
                 li.text-uppercase
-                  a(href="#").footer__item--link Customers
+                  a(href="#").footer__item--link.hover-link Customers
                 li.text-uppercase
-                  a(href="#").footer__item--link Supply Chain
+                  a(href="#").footer__item--link.hover-link Supply Chain
                 li.text-uppercase
-                  a(href="#").footer__item--link News - Events
+                  a(href="#").footer__item--link.hover-link News - Events
           .col-auto
             .footer__item
               h3.footer__title.mb-3 CONTACT
               p.padding-left-32
-                a(href="#").footer__item--link.footer__item--icon
+                a(href="#").footer__item--link.footer__item--icon.hover-icon
                   i.fab.fa-facebook-f
-                a(href="#").footer__item--link.footer__item--icon
+                a(href="#").footer__item--link.footer__item--icon.hover-icon
                   i.fab.fa-linkedin-in
-                a(href="#").footer__item--link.footer__item--icon
+                a(href="#").footer__item--link.footer__item--icon.hover-icon
                   i.far.fa-envelope
       .col-3
         .footer__item
           img.footer__logo.mb-3(src="img/logo-01.png")
+          p.footer__item--white 32/45 BUI DINH TUY, WARD 24,
+          p.footer__item--white BINH THANH DISTRICT, HCM CITY.
           p.footer__item--white
-            | 32/45 BUI DINH TUY, WARD 24,
-            br
-            | BINH THANH DISTRICT, HCM CITY.
-            br
-            | Sales@cseeker.com.vn
-            br
-            | +84 909 876 543
+            a(href="#").footer__item--link.hover-link Sales@cseeker.com.vn
+          p.footer__item--white
+            a(href="#").footer__item--link.hover-link +84 909 876 543
     .row.footer__background--secondary.footer__item.py-2
       .col-8
         .text-uppercase copyright 2020 @ cty tmdv we are one
@@ -61,4 +59,5 @@ footer.footer.border-top-yellow.padding-top-64.padding-bottom-64
         .text-uppercase.text-right
           | made with  
           i.footer__item--yellow.far.fa-heart
-          |  by inner-gy studio
+          |  by 
+          a(href="#").footer__item--link.hover-link inner-gy studio

@@ -8,9 +8,12 @@ $yellow-1: #FACF64
 $gray-1: #646464
 $gray-2: #808080
 $gray-3: #969696
+$gray-4: #c8c8c8
 $dark-1: #151515
 $dark-2: #0a0a0a
 $dark-3: #1e1e1e
+$dark-4: #141414
+$dark-5: #282828
 
 body
   font-family: interRegular
@@ -19,6 +22,9 @@ body
   font-size: 15px
   padding: 0
   margin: 0
+a,
+a:hover
+  color: inherit
 
 .font-thin
   font-family: interThin
@@ -49,31 +55,35 @@ body
   font-size: 20px
 .font-size-22
   font-size: 22px
+.font-size-30
+  font-size: 30px
 .font-size-45
   font-size: 45px
 .font-size-75
   font-size: 75px
 
 .color-title
-  color: $title !important
+  color: $title
 .color-text
-  color: $text !important
+  color: $text
 .color-black
-  color: $black !important
+  color: $black
 .color-white-1
-  color: $white-1 !important
+  color: $white-1
 .color-white-2
-  color: $white-2 !important
+  color: $white-2
 .color-white-3
-  color: $white-3 !important
+  color: $white-3
 .color-gray-1
-  color: $gray-1 !important
+  color: $gray-1
 .color-gray-2
-  color: $gray-2 !important
+  color: $gray-2
 .color-gray-3
-  color: $gray-3 !important
+  color: $gray-3
+.color-gray-4
+  color: $gray-4
 .color-dark-1
-  color: $dark-1 !important
+  color: $dark-1
 
 
 .background-yellow
@@ -146,6 +156,8 @@ body
   border-radius: 999px
 .border-top-yellow
   border-top: 5px solid $yellow-1
+.border-bottom-yellow
+  border-bottom: 5px solid $yellow-1
 
 .shadow-square-gray-3
   box-shadow: 0 0 0 1px $gray-3
@@ -160,6 +172,32 @@ body
   display: block
   width: 100%
   padding-bottom: calc( 100% * 3 / 4 )
+
+.hover-link
+  transition: all .3s
+  &:hover
+    text-decoration: underline
+    color: $yellow-1
+.hover-button
+  transition: all .3s
+  &:hover
+    background: $dark-3
+    color: $yellow-1
+.hover-shadow-yellow
+  transition: all .3s
+  &:hover
+    box-shadow: 0 0 10px 0 $yellow-1
+.hover-shadow-gray
+  transition: all .3s
+  &:hover
+    box-shadow: 0 0 24px 0 rgba($gray-4, .5)
+.hover-icon
+  transition: all .3s
+  &:hover
+    color: $black !important
+    background: $yellow-1
+    border-color: $yellow-1
+    text-decoration: none
 
 @import "header/header.sass"
 @import "footer/footer.sass"

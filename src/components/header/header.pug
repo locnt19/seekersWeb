@@ -3,19 +3,19 @@ header.header__container.d-flex.align-items-end
     .row.font-size-15
       .col
         span.color-gray-1 Call Us Now:
-        span.color-dark-1.font-medium.underline-yellow.ml-2 +84 909 876 543
+        a(href="#").hover-link.color-dark-1.font-medium.underline-yellow.text-decoration-none.ml-2 +84 909 876 543
       .col
         span.color-gray-1 Email:
-        span.color-dark-1.font-medium.underline-yellow.ml-2 Sales@cseeker.com.vn
-      .col.text-right
+        a(href="#").hover-link.color-dark-1.font-medium.underline-yellow.text-decoration-none.ml-2 Sales@cseeker.com.vn
+      .col-auto.text-right
         span.color-gray-1 Follow us:
-        span.color-dark-1.ml-2
+        a(href="#").hover-link.text-decoration-none.color-dark-1.ml-2
           i.fab.fa-facebook-square
           span.font-medium.ml-1 Facebook
-        span.color-dark-1.ml-2
+        a(href="#").hover-link.text-decoration-none.color-dark-1.ml-3
           i.fab.fa-twitter-square
           span.font-medium.ml-1 Twitter
-        span.color-dark-1.ml-2
+        a(href="#").hover-link.text-decoration-none.color-dark-1.ml-3
           i.fab.fa-linkedin
           span.font-medium.ml-1 Linkedin
   .header__navigate
@@ -23,16 +23,29 @@ header.header__container.d-flex.align-items-end
       .row.h-100.align-items-center.justify-content-between
         .col-auto
           img.header__logo(src="img/logo-top.png", alt="logo-top")
-        .col
-          nav.header__menu.font-medium.font-size-15
-            a(href="#").header__menu--item.color-white-1.active HOME
-            a(href="#").header__menu--item.color-white-1 STRATEGY+
-            a(href="#").header__menu--item.color-white-1 SUPPLY CHAIN+
-            a(href="#").header__menu--item.color-white-1 LOGISTICS+
-            a(href="#").header__menu--item.color-white-1 CUSTOMERS
-            a(href="#").header__menu--item.color-white-1 CONTACT
+        .col.h-100
+          nav.header__menu.font-medium.font-size-15.color-white-1
+            .header__menu--item.active 
+              a(href="#").header__menu--link HOME
+            .header__menu--item
+              a(href="#").header__menu--link STRATEGY
+              ul.header__menu--submenu.border-bottom-yellow.p-0.m-0.list-unstyled
+                li.header__menu--submenu--item.px-3.py-3
+                  a(href="#").hover-link.text-decoration-none Welcome/ Strategic Direction
+                li.header__menu--submenu--item.px-3.py-3
+                  a(href="#").hover-link.text-decoration-none About Us
+                li.header__menu--submenu--item.px-3.py-3
+                  a(href="#").hover-link.text-decoration-none News - Events
+            .header__menu--item
+              a(href="#").header__menu--link SUPPLY CHAIN
+            .header__menu--item 
+              a(href="#").header__menu--link LOGISTICS
+            .header__menu--item 
+              a(href="#").header__menu--link CUSTOMERS
+            .header__menu--item 
+              a(href="#").header__menu--link CONTACT
         .col-auto
           .header__language
-            a(href="#").header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none EN
+            a(href="#").hover-link.header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none EN
             span.mx-1.color-white-1 /
-            a(href="#").header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none VN
+            a(href="#").hover-link.header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none VN

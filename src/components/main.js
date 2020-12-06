@@ -7,6 +7,10 @@ function LazyLoadFunction() {
 
 $(document).ready(function () {
   LazyLoadFunction();
+  $(".header__menu--item").each((index, element) => {
+    $(element).has(".header__menu--submenu").addClass("has-submenu");
+  });
+
   new Swiper(".swiper__customer .swr__carousel .swiper-container", {
     speed: 1000,
     slidesPerView: 4,
