@@ -15,6 +15,11 @@ html(lang="en")
       block main
     block footer
       include ../components/footer/footer.pug
+    .stuff.d-flex.align-items-center.flex-column
+      a(href="#").stuff__chat.d-flex.justify-content-center.align-items-center.border-circle.background-yellow.text-decoration-none.font-size-20.mb-3
+        img.stuff__chat--icon(src="./img/icon-chat.png" alt="icon-chat.png")
+      a(href="#").stuff__top.d-flex.justify-content-center.align-items-center.background-yellow.text-decoration-none.hover-button.font-size-20
+        i.fas.fa-long-arrow-alt-up
     script(src="./js/global.min.js")
     script(src="./js/main.min.js")
     block script

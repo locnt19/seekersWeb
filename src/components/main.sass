@@ -14,6 +14,8 @@ $dark-2: #0a0a0a
 $dark-3: #1e1e1e
 $dark-4: #141414
 $dark-5: #282828
+$dark-6: #464646
+$dark-7: #1e1e26
 
 body
   font-family: interRegular
@@ -28,7 +30,6 @@ a:hover
 
 .container
   max-width: 1240px
-
 
 .font-thin
   font-family: interThin
@@ -53,6 +54,8 @@ a:hover
   font-size: 14px
 .font-size-15
   font-size: 15px
+.font-size-16
+  font-size: 16px
 .font-size-18
   font-size: 18px
 .font-size-20
@@ -70,6 +73,8 @@ a:hover
   color: $title
 .color-text
   color: $text
+.color-yellow-1
+  color: $yellow-1
 .color-black
   color: $black
 .color-white-1
@@ -88,7 +93,10 @@ a:hover
   color: $gray-4
 .color-dark-1
   color: $dark-1
-
+.color-dark-6
+  color: $dark-6
+.color-dark-7
+  color: $dark-7
 
 .background-yellow
   background-color: $yellow-1
@@ -105,6 +113,28 @@ a:hover
   text-decoration: none
   border-bottom: 3px solid $yellow-1
 
+.padding-10
+  padding: 10px
+.padding-top-10
+  padding-top: 10px
+.padding-bottom-10
+  padding-bottom: 10px
+.padding-right-10
+  padding-right: 10px
+.padding-left-10
+  padding-left: 10px
+
+.padding-22
+  padding: 22px
+.padding-top-22
+  padding-top: 22px
+.padding-bottom-22
+  padding-bottom: 22px
+.padding-right-22
+  padding-right: 22px
+.padding-left-22
+  padding-left: 22px
+
 .padding-32
   padding: 32px
 .padding-top-32
@@ -115,6 +145,7 @@ a:hover
   padding-right: 32px
 .padding-left-32
   padding-left: 32px
+
 .padding-64
   padding: 64px
 .padding-top-64
@@ -126,6 +157,28 @@ a:hover
 .padding-left-64
   padding-left: 64px
 
+.padding-84
+  padding: 84px
+.padding-top-84
+  padding-top: 84px
+.padding-bottom-84
+  padding-bottom: 84px
+.padding-right-84
+  padding-right: 84px
+.padding-left-84
+  padding-left: 84px
+
+.margin-10
+  margin: 10px
+.margin-top-10
+  margin-top: 10px
+.margin-bottom-10
+  margin-bottom: 10px
+.margin-right-10
+  margin-right: 10px
+.margin-left-10
+  margin-left: 10px
+
 .margin-32
   margin: 32px
 .margin-top-32
@@ -136,6 +189,7 @@ a:hover
   margin-right: 32px
 .margin-left-32
   margin-left: 32px
+
 .margin-64
   margin: 64px
 .margin-top-64
@@ -194,7 +248,11 @@ a:hover
 .hover-shadow-gray
   transition: all .3s
   &:hover
-    box-shadow: 0 0 24px 0 rgba($gray-4, .5)
+    box-shadow: 0 0 22px 0 rgba($gray-4, .5)
+.hover-background-white
+  transition: all .3s
+  &:hover
+    background: $white-1
 .hover-icon
   transition: all .3s
   &:hover
@@ -203,8 +261,31 @@ a:hover
     border-color: $yellow-1
     text-decoration: none
 
+.line-height-1
+  line-height: 1
+
 .transition
-    transition: all .3s
+  transition: all .3s
+
+.auchor-top-left
+  top: 0
+  left: 0
+
+.stuff
+  position: fixed
+  bottom: 15px
+  right: 15px
+  z-index: 9999
+  &__chat
+    width: 62px
+    height: 62px
+    &--icon
+      width: 27px
+  &__top
+    width: 50px
+    height: 70px
+    opacity: 0
+    visibility: hidden
 
 @import "header/header.sass"
 @import "footer/footer.sass"
@@ -215,3 +296,4 @@ a:hover
 @import "swiper/swiper-customer/swiper-customer.sass"
 @import "news/news.sass"
 @import "banner/banner.sass"
+@import "our-service/our-service.sass"

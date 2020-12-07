@@ -12,6 +12,11 @@
   top: calc( 100% - (90px / 2))
   left: 50%
   transform: translateX(-50%)
+  transition: width .35s
+  &.fixed
+    top: 0
+    width: 100%
+    position: fixed
 
 .header__logo
   max-width: 275px

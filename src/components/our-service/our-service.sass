@@ -1,0 +1,25 @@
+.our_service
+  &__item
+    &:hover
+      text-decoration: none
+      .our__service__item--title
+        transition: all .3s
+        text-decoration: underline
+        color: $yellow-1
+  &__item--icon
+    position: relative
+    height: 120px
+    flex: 0 0 120px
+    max-width: 120px
+    border-right: 1px solid $white-3
+    img
+      width: 74px
+      height: 74px
+  &__tab--item
+    transition: all .3s
+    + .our_service__tab--item
+      margin-left: 50px
+    &.active,
+    &:hover,
+      text-decoration: none
+      box-shadow: 0 3px 0 0 $yellow-1

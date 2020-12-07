@@ -11,6 +11,28 @@ $(document).ready(function () {
     $(element).has(".header__menu--submenu").addClass("has-submenu");
   });
 
+  var position = $(window).scrollTop();
+
+  $(window).scroll(function () {
+    if (document.documentElement.scrollTop > 90) {
+      document.querySelector(".stuff__top").style.visibility = "visible";
+      document.querySelector(".stuff__top").style.opacity = "1";
+    } else {
+      document.querySelector(".stuff__top").style.visibility = "hidden";
+      document.querySelector(".stuff__top").style.opacity = "0";
+    }
+
+    var scroll = $(window).scrollTop();
+    if (scroll > position && scroll >= 90) {
+      console.log("scrollDown");
+      document.querySelector(".header__navigate").classList.add("fixed");
+    } else {
+      document.querySelector(".header__navigate").classList.remove("fixed");
+      console.log("scrollUp");
+    }
+    position = scroll;
+  });
+
   new Swiper(".swiper__customer .swr__carousel .swiper-container", {
     speed: 1000,
     slidesPerView: 4,
