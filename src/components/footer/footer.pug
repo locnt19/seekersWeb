@@ -1,8 +1,8 @@
-footer.footer.border-top-yellow.padding-top-64.padding-bottom-64
+footer.footer.border-top-yellow
   .container
     .row.footer__background--main.padding-top-64.padding-bottom-64
-      .col-9
-        .row
+      .col-9.padding-left-30
+        .row.no-gutters
           .col
             .footer__item
               h3.footer__title.mb-3 LET BUILD THE LINK
@@ -15,9 +15,9 @@ footer.footer.border-top-yellow.padding-top-64.padding-bottom-64
                 | given to third parties.
               .padding-left-32
                 form.footer__form(action="POST")
-                  input.footer__form--input(type="text" name="email" placeholder="Your email address")
+                  input.footer__form--input.col(type="text" name="email" placeholder="Your email address")
                   button.footer__form--button.hover-shadow-yellow(type="submit") SUBSCRIBE
-          .col-auto
+          .col.margin-left-30
             .footer__item
               h3.footer__title.mb-3 MENU
               ul.list-unstyled.line-height-1.mb-0.padding-left-32
@@ -33,7 +33,7 @@ footer.footer.border-top-yellow.padding-top-64.padding-bottom-64
                   a(href="#").footer__item--link.hover-link Supply Chain
                 li.text-uppercase
                   a(href="#").footer__item--link.hover-link News - Events
-          .col-auto
+          .col.margin-left-30
             .footer__item
               h3.footer__title.mb-3 CONTACT
               p.padding-left-32
@@ -43,19 +43,19 @@ footer.footer.border-top-yellow.padding-top-64.padding-bottom-64
                   i.fab.fa-linkedin-in
                 a(href="#").footer__item--link.footer__item--icon.hover-icon
                   i.far.fa-envelope
-      .col-3
+      .col-3.padding-right-30
         .footer__item.line-height-1
           img.footer__logo.mb-3(src="img/logo-01.png")
           p.mb-2.footer__item--white 32/45 BUI DINH TUY, WARD 24,
-          p.mb-2.footer__item--white BINH THANH DISTRICT, HCM CITY.
-          p.mb-2.footer__item--white
+          p.footer__item--white BINH THANH DISTRICT, HCM CITY.
+          p.footer__item--white
             a(href="#").footer__item--link.hover-link Sales@cseeker.com.vn
           p.mb-0.footer__item--white
             a(href="#").footer__item--link.hover-link +84 909 876 543
-    .row.footer__background--secondary.footer__item
-      .col-8.d-flex.align-items-center
+    .row.footer__background--secondary.footer__item.line-height-1
+      .col-8.padding-left-30.padding-right-30.d-flex.align-items-center
         .text-uppercase copyright 2020 @ cty tmdv we are one
-      .col-4.d-flex.align-items-center
+      .col-4.padding-left-30.padding-right-30.d-flex.align-items-center
         .text-uppercase.ml-auto
           | made with  
           i.footer__item--yellow.far.fa-heart
