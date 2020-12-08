@@ -112,4 +112,15 @@ $(document).ready(function () {
       prevEl: ".banner__container .swr__button--prev",
     },
   });
+
+  $(".our_service__tab--item").click(function () {
+    const dataTab = $(this).data("tab");
+
+    $(".our_service__tab--item").removeClass("active");
+    $(this).addClass("active");
+
+    $(".our_service__tab--content").removeClass("active");
+    $(`.our_service__tab--content[data-tab='${dataTab}']`).addClass("active");
+  });
+
 });

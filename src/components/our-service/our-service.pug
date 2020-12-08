@@ -5,31 +5,50 @@
         h4.color-gray-3.font-size-18.font-bold.mb-3 Services
         h2.color-title.font-size-45.font-black.margin-bottom-32 Quality delivered as standard
         nav.our_service__tab.margin-bottom-32
-          a(href="#").our_service__tab--item.font-bold.font-size-16.color-title.d-inline-block.active SUPPLY CHAIN
-          a(href="#").our_service__tab--item.font-bold.font-size-16.color-title.d-inline-block LOGISTICS
-        a(href="#").our_service__item.padding-top-10.padding-bottom-10.margin-bottom-10.d-flex.hover-shadow-gray.hover-background-white
-          .our_service__item--icon.d-flex.justify-content-center.align-items-center
-            .position-absolute.line-height-1.auchor-top-left
-              i.fas.fa-square-full.color-yellow-1
-            img(src="img/icon04.png")
-          .padding-left-22.padding-right-22
-            .our__service__item--title.color-dark-7.font-medium.font-size-20.mb-2 Importer / Exporter / Wholesaler
-            p.color-dark-6.mb-0 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-        a(href="#").our_service__item.padding-top-10.padding-bottom-10.margin-bottom-10.d-flex.hover-shadow-gray.hover-background-white
-          .our_service__item--icon.d-flex.justify-content-center.align-items-center
-            .position-absolute.line-height-1.auchor-top-left
-              i.fas.fa-square-full.color-yellow-1
-            img(src="img/icon05.png")
-          .padding-left-22.padding-right-22
-            .our__service__item--title.color-dark-7.font-medium.font-size-20.mb-2 Supply chain solutions
-            p.color-dark-6.mb-0 It has survived not only five centuries, but also the leap electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-        a(href="#").our_service__item.padding-top-10.padding-bottom-10.margin-bottom-10.d-flex.hover-shadow-gray.hover-background-white
-          .our_service__item--icon.d-flex.justify-content-center.align-items-center
-            .position-absolute.line-height-1.auchor-top-left
-              i.fas.fa-square-full.color-yellow-1
-            img(src="img/icon06.png")
-          .padding-left-22.padding-right-22
-            .our__service__item--title.color-dark-7.font-medium.font-size-20.mb-2 Supplier
-            p.color-dark-6.mb-0 The release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+          li.our_service__tab--item.font-bold.font-size-16.color-title.d-inline-block(data-tab="supply-chain").active SUPPLY CHAIN
+          li.our_service__tab--item.font-bold.font-size-16.color-title.d-inline-block(data-tab="logistics") LOGISTICS
+        .our_service__tab--container
+          .our_service__tab--content.active(data-tab="supply-chain")
+            a(href="#").our_service__item.padding-top-10.padding-bottom-10.margin-bottom-10.d-flex.hover-shadow-gray.hover-background-white
+              .our_service__item--icon.d-flex.justify-content-center.align-items-center
+                .position-absolute.line-height-1.auchor-top-left
+                  i.fas.fa-square-full.color-yellow-1
+                img(src="img/icon04.png")
+              .padding-left-22.padding-right-22
+                .our__service__item--title.color-dark-7.font-medium.font-size-20.mb-2 Importer / Exporter / Wholesaler
+                p.color-dark-6.mb-0 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+            a(href="#").our_service__item.padding-top-10.padding-bottom-10.margin-bottom-10.d-flex.hover-shadow-gray.hover-background-white
+              .our_service__item--icon.d-flex.justify-content-center.align-items-center
+                .position-absolute.line-height-1.auchor-top-left
+                  i.fas.fa-square-full.color-yellow-1
+                img(src="img/icon05.png")
+              .padding-left-22.padding-right-22
+                .our__service__item--title.color-dark-7.font-medium.font-size-20.mb-2 Supply chain solutions
+                p.color-dark-6.mb-0 It has survived not only five centuries, but also the leap electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+            a(href="#").our_service__item.padding-top-10.padding-bottom-10.margin-bottom-10.d-flex.hover-shadow-gray.hover-background-white
+              .our_service__item--icon.d-flex.justify-content-center.align-items-center
+                .position-absolute.line-height-1.auchor-top-left
+                  i.fas.fa-square-full.color-yellow-1
+                img(src="img/icon06.png")
+              .padding-left-22.padding-right-22
+                .our__service__item--title.color-dark-7.font-medium.font-size-20.mb-2 Supplier
+                p.color-dark-6.mb-0 The release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+          .our_service__tab--content(data-tab="logistics")
+            a(href="#").our_service__item.padding-top-10.padding-bottom-10.margin-bottom-10.d-flex.hover-shadow-gray.hover-background-white
+              .our_service__item--icon.d-flex.justify-content-center.align-items-center
+                .position-absolute.line-height-1.auchor-top-left
+                  i.fas.fa-square-full.color-yellow-1
+                img(src="img/icon04.png")
+              .padding-left-22.padding-right-22
+                .our__service__item--title.color-dark-7.font-medium.font-size-20.mb-2 Oversea cargo
+                p.color-dark-6.mb-0 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+            a(href="#").our_service__item.padding-top-10.padding-bottom-10.margin-bottom-10.d-flex.hover-shadow-gray.hover-background-white
+              .our_service__item--icon.d-flex.justify-content-center.align-items-center
+                .position-absolute.line-height-1.auchor-top-left
+                  i.fas.fa-square-full.color-yellow-1
+                img(src="img/icon05.png")
+              .padding-left-22.padding-right-22
+                .our__service__item--title.color-dark-7.font-medium.font-size-20.mb-2 Freight Forwarder Handling
+                p.color-dark-6.mb-0 It has survived not only five centuries, but also the leap electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
       .col-6
         img.mw-100(src="./img/service/service01.png" alt="service01.png")

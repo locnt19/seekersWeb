@@ -16,6 +16,7 @@
       width: 74px
       height: 74px
   &__tab--item
+    cursor: pointer
     transition: all .3s
     + .our_service__tab--item
       margin-left: 50px
@@ -23,3 +24,13 @@
     &:hover,
       text-decoration: none
       box-shadow: 0 3px 0 0 $yellow-1
+  &__tab--content
+    transition: all .3s
+    opacity: 0
+    visibility: hidden
+    height: 0
+    &.active
+      width: 100%
+      opacity: 1
+      visibility: visible
+      height: auto
