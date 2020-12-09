@@ -24,11 +24,9 @@ $(document).ready(function () {
 
     var scroll = $(window).scrollTop();
     if (scroll > position && scroll >= 90) {
-      console.log("scrollDown");
       document.querySelector(".header__navigate").classList.add("fixed");
     } else {
       document.querySelector(".header__navigate").classList.remove("fixed");
-      console.log("scrollUp");
     }
     position = scroll;
   });

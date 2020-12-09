@@ -4,13 +4,19 @@ block var
   -var title = 'Seekers | News'
 
 block main
-  .banner__page(style="background-image: url('../img/Banner/section-bg-02.jpg')")
+  .banner__page(style="background-image: url('img/Banner/section-bg-02.jpg')")
     .banner__page--content
       .container
         .row
           .col-12
             h2.color-white-1.font-size-75.font-black.margin-bottom-64 News - Events
-            include ../components/breadcrumb/breadcrumb.pug
+            nav.breadcrumb__container.list-unstyled.d-flex.color-white-1.line-height-1
+              li.breadcrumb__item
+                a(href="#").breadcrumb__link HOME
+              li.breadcrumb__item
+                a(href="#").breadcrumb__link STRATEGY
+              li.breadcrumb__item
+                a(href="#").breadcrumb__link NEWS - EVENTS
   .container.padding-top-84.padding-bottom-84
     .row
       .col-4
