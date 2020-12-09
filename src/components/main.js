@@ -75,10 +75,6 @@ $(document).ready(function () {
     slidesPerView: 3,
     loop: true,
     spaceBetween: 42,
-    //#region lazy load swiper
-    preloadImages: false,
-    lazy: true,
-    //#endregion
     simulateTouch: false, // tắt kéo-thả chuột khi chuyển slide
     navigation: {
       nextEl: ".news__container .swr__button--next",
@@ -111,14 +107,34 @@ $(document).ready(function () {
     },
   });
 
-  $(".our_service__tab--item").click(function () {
-    const dataTab = $(this).data("tab");
-
-    $(".our_service__tab--item").removeClass("active");
-    $(this).addClass("active");
-
-    $(".our_service__tab--content").removeClass("active");
-    $(`.our_service__tab--content[data-tab='${dataTab}']`).addClass("active");
+  
+  new Swiper(".about__page__swiper .swr__carousel .swiper-container", {
+    speed: 1000,
+    slidesPerView: 5,
+    loop: true,
+    spaceBetween: 30,
+    //#region lazy load swiper
+    preloadImages: false,
+    lazy: true,
+    //#endregion
+    navigation: {
+      nextEl: ".about__page__swiper .swr__button--next",
+      prevEl: ".about__page__swiper .swr__button--prev",
+    },
   });
 
+  toggleTab(".our_service__tab--item", ".our_service__tab--content");
+  toggleTab(".about__page__tab--item", ".about__page__tab__content--item");
 });
+
+function toggleTab(selectorTab, selectorContent) {
+  $(selectorTab).click(function () {
+    const dataTab = $(this).data("tab");
+
+    $(selectorTab).removeClass("active");
+    $(this).addClass("active");
+
+    $(selectorContent).removeClass("active");
+    $(selectorContent + `[data-tab='${dataTab}']`).addClass("active");
+  });
+}

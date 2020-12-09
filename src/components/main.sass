@@ -5,6 +5,7 @@ $white-1: #ffffff
 $white-2: #f2f2f2
 $white-3: #f0f0f0
 $yellow-1: #FACF64
+$yellow-2: #FFC850
 $gray-1: #646464
 $gray-2: #808080
 $gray-3: #969696
@@ -52,6 +53,8 @@ a:hover
   font-family: interExtraBold
 .font-black
   font-family: interBlack
+.font-style-italic
+  font-style: italic
 
 .font-size-14
   font-size: 14px
@@ -103,6 +106,8 @@ a:hover
 
 .background-yellow
   background-color: $yellow-1
+.background-yellow-2
+  background-color: $yellow-2
 .background-gray-3
   background-color: $gray-3
 .background-gray-5
@@ -352,6 +357,14 @@ a:hover
     bottom: 30px
     width: 100%
 
+.about__page,
+.welcome__page
+  background-image: url(../img/background-image.jpg)
+  background-position-x: center
+  background-position-y: 0
+  background-size: contain
+  background-repeat: no-repeat
+
 @import "header/header.sass"
 @import "footer/footer.sass"
 @import "service/service.sass"
@@ -364,3 +377,4 @@ a:hover
 @import "our-service/our-service.sass"
 @import "pagination/pagination.sass"
 @import "breadcrumb/breadcrumb.sass"
+@import "about-page.sass"
