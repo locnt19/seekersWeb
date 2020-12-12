@@ -52,12 +52,29 @@ a:hover
 
 .about__page,
 .welcome__page,
-.service__page
+.detail__page
   background-image: url(../img/background-image.jpg)
   background-position-x: center
   background-position-y: 0
   background-size: contain
   background-repeat: no-repeat
+
+.news__view__page__search--input
+  margin-bottom: 15px
+  padding: 0 24px
+  width: 100%
+  height: 55px
+  background: $white-4
+  font-family: interMedium
+  &::placeholder
+    font-style: italic
+
+.swiper__news__view__page
+  .swr__container
+    height: 400px
+  .swr__carousel--item
+    + .swr__carousel--item
+      border-top: 1px solid $white-5
 
 @import "header/header.sass"
 @import "footer/footer.sass"
@@ -73,4 +90,4 @@ a:hover
 @import "breadcrumb/breadcrumb.sass"
 @import "about-page.sass"
 @import "contact-page.sass"
-@import "service-page.sass"
+@import "detail-page.sass"

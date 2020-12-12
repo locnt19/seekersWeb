@@ -1,0 +1,65 @@
+.detail__page
+  &__box
+    width: 310px
+    position: relative
+  &__box__2
+    position: relative
+    width: calc(310px - 10px)
+    z-index: 1
+    &::before
+      z-index: -1
+      content: ""
+      width: calc(310px - 10px)
+      height: 100%
+      background: $white-4
+      position: absolute
+      top: 10px
+      left: 10px
+    ul
+      li
+        + li
+          margin-top: 8px
+  &__title
+    font-family: interExtraBold
+    *
+      font-size: 45px
+      margin-bottom: 0
+  &__content
+    color: $dark-6
+    font-family: interRegular
+    text-align: justify
+    *
+      margin-bottom: 16px
+    h1, h2, h3, h4, h5, h6
+      color: $title
+      font-family: interBold
+    img
+      max-width: 100%
+    ul
+      list-style: none
+      padding-left: 0
+      li
+        position: relative
+        padding-left: 16px
+        &::before
+          position: absolute
+          top: 6px
+          left: 0
+          font-size: 8px
+          color: $yellow-2
+          content: '\f111'
+          line-height: 1
+          display: inline-block
+          font-family: 'Font Awesome 5 Free'
+          font-style: normal
+          font-display: auto
+          font-weight: 900
+          font-variant: normal
+          text-rendering: auto
+          -webkit-font-smoothing: antialiased
+          -moz-osx-font-smoothing: grayscale
+  &__share
+    border-top: 1px solid #e1e1e1
+    a
+      margin-left: 24px
+      text-decoration: none
