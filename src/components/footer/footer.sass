@@ -1,13 +1,17 @@
 .footer
-  padding: 124px 0
   background-image: url(../img/footer-background.jpg)
+  padding: 96px 0
+  @media screen and ( min-width: 768px )
+    padding: 124px 0
 
 .footer__background--main
   background-color: $dark-1
+  padding: 30px 15px
 
 .footer__background--secondary
-  height: 64px
   background-color: $dark-2
+  @media screen and ( min-width: 576px )
+    height: 64px
 
 .footer__title
 
@@ -50,10 +54,12 @@
     color: $yellow-1
 
 .footer__form
-  width: 375px
   background: $white-1
   display: flex
   border-radius: 999px
+  width: 100%
+  @media screen and ( min-width: 576px )
+    width: 375px
   &--input,
   &--button
     font-family: interRegular
@@ -78,4 +84,6 @@
     background: $yellow-1
     text-transform: uppercase
     font-family: interBold
-    flex: 0 0 128px
+    // flex: 0 0 128px
+    @media screen and ( min-width: 576px )
+      flex: 0 0 128px
