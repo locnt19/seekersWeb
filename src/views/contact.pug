@@ -9,26 +9,24 @@ block main
       .container
         .row
           .col-12
-            h2.color-white-1.font-size-75.font-black.margin-bottom-64 Contacts
-            nav.breadcrumb__container.list-unstyled.d-flex.color-white-1.line-height-1.text-uppercase
+            h2.color-white-1.font-size-45.font-size-sm-75.font-black.margin-bottom-32.margin-bottom-sm-64 Contacts
+            nav.breadcrumb__container.list-unstyled.d-flex.flex-wrap.color-white-1.line-height-1.text-uppercase
               li.breadcrumb__item
                 a(href="#").breadcrumb__link HOME
               li.breadcrumb__item
                 a(href="#").breadcrumb__link CONTACT
   .contact__page
-    .container.padding-top-84.padding-bottom-84
+    .container.padding-y-64.padding-y-sm-84
       .row.margin-bottom-30
-        .col-8.mx-auto.contact__page__content
+        .col-sm-8.mx-auto.contact__page__content
           img(src="./img/seekers-logo-icon.svg" alt="seekers-logo-icon.svg")
           h2 We’d love to hear from you
           p
             | Please send your enquiry to  
             a(href="#") sales@seekers.com.vn
-            |  or contact your local  
-            br
-            |  pecialists using the contact details below.
+            |  or contact your local pecialists using the contact details below.
       .row
-        .col-6
+        .col-md-6.mb-3.mb-md-0
           .contact__page__box.border-gray.padding-32.text-center
             h3 Saigon (Head Office)
             p
@@ -43,7 +41,7 @@ block main
             a(href="#").hover-icon.hover-shadow-yellow.d-inline-block.font-bold.color-black.font-size-14.text-uppercase.text-decoration-none.border-button.border-circle.background-yellow.py-3.px-4.mt-3
               | FIND US ON MAP
               i.fas.fa-arrow-right.ml-2
-        .col-6
+        .col-md-6.mb-3.mb-md-0
           .contact__page__box.border-gray.padding-32.text-center
             h3 Seekers USA Office
             p
@@ -58,12 +56,12 @@ block main
             a(href="#").hover-icon.hover-shadow-yellow.d-inline-block.font-bold.color-black.font-size-14.text-uppercase.text-decoration-none.border-button.border-circle.background-yellow.py-3.px-4.mt-3
               | FIND US ON MAP
               i.fas.fa-arrow-right.ml-2
-    #contact__page__form.padding-top-84.padding-bottom-84.border-top-yellow.background-image(style="background-image: url('./img/Banner/banner01.jpg')")
+    #contact__page__form.padding-y-64.padding-y-sm-84.border-top-yellow.background-image(style="background-image: url('./img/Banner/banner01.jpg')")
       .container
         .row
           .col-12.margin-bottom-30
-            h4.color-gray-3.font-size-18.font-bold.mb-3 Have Any Question?
-            h2.color-white-3.font-size-45.font-black.mb-0
+            h4.color-gray-3.font-size-14.font-size-sm-18.font-bold.mb-3 Have Any Question?
+            h2.color-white-3.font-size-30.font-size-sm-45.font-black.mb-0
               | If you would like to know more
               br
               | about our services, please contact 
@@ -71,11 +69,11 @@ block main
               | us using this form
           .col-12
             form.row.contact__page__form
-              .col-4
+              .col-sm-4
                 input.contact__page__form--input.padding-left-30.padding-right-30.margin-bottom-30.font-regular.color-white-1.background-dark-8(type="text" placeholder="Complate Name")
-              .col-4
+              .col-sm-4
                 input.contact__page__form--input.padding-left-30.padding-right-30.margin-bottom-30.font-regular.color-white-1.background-dark-8(type="text" placeholder="Email Address")
-              .col-4
+              .col-sm-4
                 input.contact__page__form--input.padding-left-30.padding-right-30.margin-bottom-30.font-regular.color-white-1.background-dark-8(type="text" placeholder="Phone No")
               .col-12
                 textarea.contact__page__form--textarea.padding-left-30.padding-right-30.margin-bottom-30.font-regular.color-white-1.background-dark-8.pt-3(placeholder="Your Message")
