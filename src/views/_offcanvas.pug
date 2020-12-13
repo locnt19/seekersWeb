@@ -50,10 +50,12 @@
               |  Linkedin
       li.offcanvas_nav__divider
       li.offcanvas_nav__item
-        .header__language
-          a(href="#").hover-link.header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none EN
-          img.mx-1(src="./img/slash-black.png" alt="/")
-          a(href="#").hover-link.header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none VN
+        .d-flex
+          span.font-black.mr-1 Language:
+          .header__language
+            a(href="#").header__language--item.color-white-1.font-size-14.text-decoration-none EN
+            img.mx-1(src="./img/slash-black.png" alt="/")
+            a(href="#").header__language--item.color-white-1.font-size-14.text-decoration-none VN
       li.offcanvas_nav__divider
       li.offcanvas_nav__item
         div(role='button').d-block.offcanvas_button__close

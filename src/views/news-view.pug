@@ -9,18 +9,18 @@ block main
       .container
         .row
           .col-12
-            h2.color-white-1.font-size-75.font-black.margin-bottom-64 News - Events
-            nav.breadcrumb__container.list-unstyled.d-flex.color-white-1.line-height-1.text-uppercase
+            h2.color-white-1.font-size-45.font-size-sm-75.font-black.margin-bottom-32.margin-bottom-sm-64 News - Events
+            nav.breadcrumb__container.list-unstyled.d-flex.flex-wrap.color-white-1.line-height-1.text-uppercase
               li.breadcrumb__item
                 a(href="#").breadcrumb__link HOME
               li.breadcrumb__item
                 a(href="#").breadcrumb__link STRATEGY
               li.breadcrumb__item
                 a(href="#").breadcrumb__link News - Events
-  .detail__page
-    .container.padding-bottom-84
+  .detail__page.padding-bottom-30.padding-bottom-md-84
+    .container
       .row
-        .col.padding-top-90.margin-right-70
+        .col.padding-top-md-90.margin-right-lg-70
           .detail__page__title.mb-3
             h1 Vietnam courts overseas diaspora to boost digitization, exports.
           .detail__page__time.font-bold.font-size-14.margin-bottom-32
@@ -53,20 +53,20 @@ block main
               a(href="#").fab.fa-facebook-messenger
               a(href="#").fab.fa-twitter
               a(href="#").fab.fa-google
-        .col-auto.padding-top-90
+        .col-sm-auto.padding-top-md-90
           #left_sidebar_news_detail
-            .detail__page__box.margin-bottom-50
+            .detail__page__box.margin-bottom-30.margin-bottom-md-50
               .detail__page__box__2
-                .padding-x-30.padding-bottom-30.padding-top-42.border-white-5.background-white-1
+                .px-3.py-4.padding-x-md-30.padding-bottom-md-30.padding-top-md-42.border-white-5.background-white-1
                   input.news__view__page__search--input.border-button(type="text" placeholder="Search...")
-                  a(href="#").hover-icon.hover-shadow-gray.d-inline-block.font-bold.color-black.font-size-14.text-uppercase.text-decoration-none.border-button.border-circle.background-yellow-2.line-height-1.py-3.px-4
+                  a(href="#").hover-icon.hover-shadow-gray.d-inline-block.font-bold.color-black.font-size-14.text-uppercase.text-decoration-none.border-button.border-circle.background-yellow-2.line-height-1.py-2.px-3.py-md-3.px-md-4
                     | SEARCH
                     i.fas.fa-search.ml-2
-            .detail__page__box.margin-bottom-50
+            .detail__page__box.margin-bottom-30.margin-bottom-md-50
               .detail__page__box__2
-                .padding-x-30.padding-bottom-30.padding-top-42.border-white-5.background-white-1
+                .px-3.py-4.padding-x-md-30.padding-bottom-md-30.padding-top-md-42.border-white-5.background-white-1
                   h4.underline-yellow.pb-2.font-black.font-size-18 SERVICES
-                  ul.pl-0.list-unstyled.margin-top-30.mb-0
+                  ul.pl-0.list-unstyled.margin-top-md-30.mt-3.mb-0
                     li
                       a(href="#").font-medium
                         i.far.fa-arrow-alt-circle-right.mr-1
@@ -86,17 +86,17 @@ block main
                     li
                       a(href="#").font-medium
                         i.far.fa-arrow-alt-circle-right.mr-1
-                        | Importer/Exporter/Wholesaler
-            .detail__page__box.margin-bottom-50
+                        | Importer / Exporter / Wholesaler
+            .detail__page__box
               .detail__page__box__2
                 .swiper__news__view__page
-                  .padding-x-30.padding-bottom-30.padding-top-42.border-white-5.background-white-1
+                  .px-3.py-4.padding-x-md-30.padding-bottom-md-30.padding-top-md-42.border-white-5.background-white-1
                     .d-flex.align-items-center.underline-yellow.pb-2.mb-3
                       h4.mb-0.font-black.font-size-18 RECENT POSTS
-                      .ml-auto
-                        button.swr__button.swr__button--prev.border-button.font-size-20.p-0.background-transparent.mr-2
+                      .d-flex.ml-auto
+                        button.swr__button.swr__button--prev.border-button.font-size-20.p-0.background-transparent
                           i.fas.fa-chevron-left
-                        button.swr__button.swr__button--next.border-button.font-size-20.p-0.background-transparent
+                        button.swr__button.swr__button--next.border-button.font-size-20.p-0.background-transparent.ml-2
                           i.fas.fa-chevron-right
                     .swr__container.swiper-container
                       .swiper-wrapper
@@ -117,9 +117,9 @@ block main
 
   .news__container.swr__container.padding-bottom-64
     .container
-      .row.margin-bottom-32.align-items-end
+      .row.mb-3.margin-bottom-sm-32.align-items-end
         .col
-          h2.color-title.font-size-45.font-black.mb-0 Related Post
+          h2.color-title.font-size-30.font-size-sm-45.font-black.mb-0  Related Post
         .col-auto
           .swr_navigate
             .swr__navigation.d-flex

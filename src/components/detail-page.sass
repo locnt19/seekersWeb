@@ -1,20 +1,34 @@
 .detail__page
+  padding-top: 64px
+  padding-bottom: 64px
+  @media screen and ( min-width: 768px )
+    padding-top: 0
   &__box
-    width: 310px
+    width: 100%
     position: relative
+    word-wrap: break-word
+    @media screen and ( min-width: 576px )
+      width: 200px
+    @media screen and ( min-width: 768px )
+      width: 310px
   &__box__2
     position: relative
-    width: calc(310px - 10px)
+    width: calc(100% - 10px)
     z-index: 1
+    word-wrap: break-word
     &::before
       z-index: -1
       content: ""
-      width: calc(310px - 10px)
+      width: 100%
       height: 100%
       background: $white-4
       position: absolute
       top: 10px
       left: 10px
+    @media screen and ( min-width: 576px )
+      width: calc(200px - 10px)
+    @media screen and ( min-width: 768px )
+      width: calc(310px - 10px)
     ul
       li
         + li
@@ -22,8 +36,14 @@
   &__title
     font-family: interExtraBold
     *
-      font-size: 45px
+      font-size: 24px
       margin-bottom: 0
+      @media screen and ( min-width: 576px )
+        font-size: 30px
+      @media screen and ( min-width: 768px )
+        font-size: 38px
+      @media screen and ( min-width: 992px )
+        font-size: 45px
   &__content
     color: $dark-6
     font-family: interRegular
@@ -35,6 +55,7 @@
       font-family: interBold
     img
       max-width: 100%
+      max-height: 650px
     ul
       list-style: none
       padding-left: 0
@@ -60,6 +81,9 @@
           -moz-osx-font-smoothing: grayscale
   &__share
     border-top: 1px solid #e1e1e1
+    margin-bottom: 30px
     a
       margin-left: 24px
       text-decoration: none
+    @media screen and ( min-width: 576px )
+      margin-bottom: 0

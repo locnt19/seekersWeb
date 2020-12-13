@@ -40,7 +40,6 @@ $(document).ready(function () {
       800
     );
   });
-
 });
 
 function LazyLoadFunction() {
@@ -92,13 +91,23 @@ function swiper() {
 
   new Swiper(".news__container .swr__carousel .swiper-container", {
     speed: 1000,
-    slidesPerView: 3,
+    slidesPerView: 1,
     loop: true,
-    spaceBetween: 42,
+    spaceBetween: 15,
     simulateTouch: false, // tắt kéo-thả chuột khi chuyển slide
     navigation: {
       nextEl: ".news__container .swr__button--next",
       prevEl: ".news__container .swr__button--prev",
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 42,
+      },
     },
   });
 
@@ -143,17 +152,17 @@ function swiper() {
     breakpoints: {
       576: {
         slidesPerView: 3,
-        spaceBetween: 15
+        spaceBetween: 15,
       },
       768: {
         slidesPerView: 4,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
       992: {
         slidesPerView: 5,
-        spaceBetween: 30
+        spaceBetween: 30,
       },
-    }
+    },
   });
 
   new Swiper(".swiper__news__view__page .swiper-container", {
