@@ -1,6 +1,6 @@
 $(document).ready(function () {
   LazyLoadFunction();
-  // navbarOffCanvas();
+  navbarOffCanvas();
   swiper();
   toggleTab(".our_service__tab--item", ".our_service__tab--content");
   toggleTab(".about__page__tab--item", ".about__page__tab__content--item");
