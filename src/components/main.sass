@@ -36,6 +36,8 @@ a:hover
   z-index: 1
   height: 320px
   position: relative
+  background-size: cover
+  background-position: center
   &::before
     content: ""
     position: absolute
@@ -77,6 +79,16 @@ a:hover
   .swr__carousel--item
     + .swr__carousel--item
       border-top: 1px solid $white-5
+
+@media screen and ( min-width: 992px )
+  .no-gutters-lg
+    margin-right: 0
+    margin-left: 0
+
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"]
+    padding-right: 0
+    padding-left: 0
 
 @import "header/header.sass"
 @import "footer/footer.sass"

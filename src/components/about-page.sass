@@ -1,6 +1,19 @@
 .about__page
+  &__content,
+  &__content--icon
+    p
+      color: $text
+      &:last-of-type
+        margin-bottom: 0
+  &__content--icon
+    h1, h2, h3, h4, h5, h6
+      font-style: italic
+      font-size: 24px
+      color: $title
+      @media screen and ( min-width: 576px )
+        font-size: 30px
   img
-    max-height: 750px
+    max-height: 650px
   &--logo
     img
       width: 132px
@@ -8,6 +21,10 @@
     img
       width: 75px
   &__tab
+    &--container
+      background-image: url(../img/Banner/banner01.jpg)
+      @media screen and ( min-width: 576px )
+        background-image: url(../img/about01.jpg)
     &--item
       width: calc(100% + (2 * 1rem))
       height: 50px
@@ -30,9 +47,10 @@
         height: auto
   &__swiper
     .swr__carousel--item
-      // max-width: 230px
       height: 150px
       border: 1px solid $gray-4
+      margin-top: 1px
+      margin-bottom: 1px
       display: flex
       align-items: center
       justify-content: center
