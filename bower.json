@@ -19,6 +19,7 @@
     "linearicons": "^1.0.2",
     "vanilla-lazyload": "^17.1.0",
     "bootstrap": "^4.5.3",
-    "sticky-kit": "^1.1.2"
+    "sticky-kit": "^1.1.2",
+    "fancybox": "^3.5.7"
   }
 }

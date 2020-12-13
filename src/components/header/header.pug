@@ -1,53 +1,86 @@
-header.header__container.d-flex.align-items-end
-  .container.mb-2
-    .row.font-size-15
-      .col
-        span.color-gray-1 Call Us Now:
-        a(href="#").hover-link.color-dark-1.font-medium.underline-yellow.text-decoration-none.ml-2 +84 909 876 543
-      .col
-        span.color-gray-1 Email:
-        a(href="#").hover-link.color-dark-1.font-medium.underline-yellow.text-decoration-none.ml-2 Sales@cseeker.com.vn
-      .col-auto.text-right
-        span.color-gray-1 Follow us:
-        a(href="#").hover-link.text-decoration-none.color-dark-1.ml-2
-          i.fab.fa-facebook-square
-          span.font-medium.ml-1 Facebook
-        a(href="#").hover-link.text-decoration-none.color-dark-1.ml-3
-          i.fab.fa-twitter-square
-          span.font-medium.ml-1 Twitter
-        a(href="#").hover-link.text-decoration-none.color-dark-1.ml-3
-          i.fab.fa-linkedin
-          span.font-medium.ml-1 Linkedin
-  .header__navigate
-    .container.h-100
-      .row.h-100.align-items-center.justify-content-between
-        .col-auto
-          .header__logo
-            a(href="index.html")
-              img(src="./img/seekers-logo.svg" alt="logo-top")
-        .col-auto.h-100
-          nav.header__menu.font-medium.font-size-15.color-white-1
-            .header__menu--item.active 
-              a(href="#").header__menu--link HOME
-            .header__menu--item
-              a(href="#").header__menu--link STRATEGY
-              ul.header__menu--submenu.border-bottom-yellow.p-0.m-0.list-unstyled
-                li.header__menu--submenu--item.px-3.py-3
-                  a(href="#").hover-link.text-decoration-none Welcome/ Strategic Direction
-                li.header__menu--submenu--item.px-3.py-3
-                  a(href="#").hover-link.text-decoration-none About Us
-                li.header__menu--submenu--item.px-3.py-3
-                  a(href="#").hover-link.text-decoration-none News - Events
-            .header__menu--item
-              a(href="#").header__menu--link SUPPLY CHAIN
-            .header__menu--item 
-              a(href="#").header__menu--link LOGISTICS
-            .header__menu--item 
-              a(href="#").header__menu--link CUSTOMERS
-            .header__menu--item 
-              a(href="#").header__menu--link CONTACT
-        .col-auto
-          .header__language
-            a(href="#").hover-link.header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none EN
-            img.mx-1(src="./img/slash.png" alt="/")
-            a(href="#").hover-link.header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none VN
+header
+  .header__pc__container
+    .header__top.container.mb-2
+      .row.font-size-15
+        .col
+          span.color-gray-1 Call Us Now:
+          a(href="#").hover-link.color-dark-1.font-medium.underline-yellow.text-decoration-none.ml-2 +84 909 876 543
+        .col
+          span.color-gray-1 Email:
+          a(href="#").hover-link.color-dark-1.font-medium.underline-yellow.text-decoration-none.ml-2 Sales@cseeker.com.vn
+        .col-auto.text-right
+          span.color-gray-1 Follow us:
+          a(href="#").hover-link.text-decoration-none.color-dark-1.ml-2
+            i.fab.fa-facebook-square
+            span.font-medium.ml-1 Facebook
+          a(href="#").hover-link.text-decoration-none.color-dark-1.ml-3
+            i.fab.fa-twitter-square
+            span.font-medium.ml-1 Twitter
+          a(href="#").hover-link.text-decoration-none.color-dark-1.ml-3
+            i.fab.fa-linkedin
+            span.font-medium.ml-1 Linkedin
+    .header__navigate
+      .container.h-100
+        .row.h-100.align-items-center.justify-content-between
+          .col-auto
+            .header__logo
+              a(href="index.html")
+                img(src="./img/seekers-logo.svg" alt="logo-top")
+          .col-auto.h-100
+            nav.header__menu.font-medium.font-size-15.color-white-1
+              .header__menu--item.active 
+                a(href="#").header__menu--link HOME
+              .header__menu--item
+                a(href="#").header__menu--link STRATEGY
+                ul.header__menu--submenu.border-bottom-yellow.p-0.m-0.list-unstyled
+                  li.header__menu--submenu--item.px-3.py-3
+                    a(href="#").hover-link.text-decoration-none Welcome/ Strategic Direction
+                  li.header__menu--submenu--item.px-3.py-3
+                    a(href="#").hover-link.text-decoration-none About Us
+                  li.header__menu--submenu--item.px-3.py-3
+                    a(href="#").hover-link.text-decoration-none News - Events
+              .header__menu--item
+                a(href="#").header__menu--link SUPPLY CHAIN
+              .header__menu--item 
+                a(href="#").header__menu--link LOGISTICS
+              .header__menu--item 
+                a(href="#").header__menu--link CUSTOMERS
+              .header__menu--item 
+                a(href="#").header__menu--link CONTACT
+          .col-auto
+            .header__language
+              a(href="#").hover-link.header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none EN
+              img.mx-1(src="./img/slash.png" alt="/")
+              a(href="#").hover-link.header__language--item.color-white-1.font-bold.font-size-14.text-decoration-none VN
+  .header__mb__container
+    .header__mb__top
+      .header__mb__logo
+        a(href="index.html")
+          img(src="./img/seekers-logo.svg" alt="logo-top")
+      button#offcanvas_button__open.border-button.color-yellow-1.font-size-22.background-transparent
+        i.fas.fa-bars
+    .offcanvas.offcanvas_overlay
+      .offcanvas_bar
+        .offcanvas_header
+          a(href="index.html")
+            img.lazy.offcanvas_header__logo(data-src="img/seekers-logo.svg" alt="logo-top")
+        ul.offcanvas_nav
+          li.offcanvas_nav__item
+            a(href="index.html").offcanvas_nav__link Trang chủ
+          li.offcanvas_nav__item
+            a(href="#").offcanvas_nav__link Giới thiệu
+            ul.offcanvas_nav__sub
+              li.offcanvas_nav__item
+                a(href="#").offcanvas_nav__link Giới thiệu chung
+              li.offcanvas_nav__item
+                a(href="#").offcanvas_nav__link Tầm nhìn - sứ mạng
+              li.offcanvas_nav__item
+                a(href="#").offcanvas_nav__link Mục tiêu đào tạo
+              li.offcanvas_nav__item
+                a(href="#").offcanvas_nav__link Ban chủ nhiệm Khoa
+              li.offcanvas_nav__item
+                a(href="#").offcanvas_nav__link Các bộ phận & Hội đồng
+              li.offcanvas_nav__item
+                a(href="#").offcanvas_nav__link Đội ngũ giáo viên
+              li.offcanvas_nav__item
+                a(href="#").offcanvas_nav__link Liên hệ

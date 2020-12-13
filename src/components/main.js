@@ -1,12 +1,12 @@
-function LazyLoadFunction() {
-  var lazyLoad = new LazyLoad({
-    elements_selector: ".lazy",
-  });
-  lazyLoad.update();
-}
-
 $(document).ready(function () {
   LazyLoadFunction();
+  // navbarOffCanvas();
+  swiper();
+  toggleTab(".our_service__tab--item", ".our_service__tab--content");
+  toggleTab(".about__page__tab--item", ".about__page__tab__content--item");
+
+  $("#left_sidebar_news_detail").stick_in_parent();
+
   $(".header__menu--item").each((index, element) => {
     $(element).has(".header__menu--submenu").addClass("has-submenu");
   });
@@ -41,6 +41,16 @@ $(document).ready(function () {
     );
   });
 
+});
+
+function LazyLoadFunction() {
+  var lazyLoad = new LazyLoad({
+    elements_selector: ".lazy",
+  });
+  lazyLoad.update();
+}
+
+function swiper() {
   new Swiper(".swiper__customer .swr__carousel .swiper-container", {
     speed: 1000,
     slidesPerView: 4,
@@ -141,12 +151,7 @@ $(document).ready(function () {
       prevEl: ".swiper__news__view__page .swr__button--prev",
     },
   });
-
-  toggleTab(".our_service__tab--item", ".our_service__tab--content");
-  toggleTab(".about__page__tab--item", ".about__page__tab__content--item");
-
-  $("#left_sidebar_news_detail").stick_in_parent();
-});
+}
 
 function toggleTab(selectorTab, selectorContent) {
   $(selectorTab).click(function () {
@@ -159,3 +164,50 @@ function toggleTab(selectorTab, selectorContent) {
     $(selectorContent + `[data-tab='${dataTab}']`).addClass("active");
   });
 }
+
+//#region Navbar OffCanvas pure JS
+function navbarOffCanvas() {
+  // When the user clicks anywhere outside of the offcanvas, close it
+  window.addEventListener("click", function (event) {
+    if (event.target === document.querySelector(".offcanvas.open")) {
+      CloseOffCanvas();
+    }
+  });
+  // toggle offcanvas_nav_sub
+  var offCanvasNavLink = document.querySelectorAll(".offcanvas_nav__link");
+  offCanvasNavLink.forEach(function (item) {
+    if (item.nextElementSibling !== null) {
+      item.classList.add("has_navsub");
+      // console.log(item)
+    }
+    item.addEventListener("click", function (e) {
+      if (this.nextElementSibling !== null) {
+        e.preventDefault();
+        this.classList.toggle("show");
+        this.nextElementSibling.classList.toggle("show");
+      }
+    });
+  });
+  document
+    .querySelector("#offcanvas_button__open")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      OpenOffCanvas();
+    });
+  document
+    .querySelector(".offcanvas_button__close")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      CloseOffCanvas();
+    });
+
+  function OpenOffCanvas() {
+    document.querySelector(".offcanvas").classList.add("open");
+    document.querySelector("body").classList.add("offcanvas_container");
+  }
+  function CloseOffCanvas() {
+    document.querySelector(".offcanvas").classList.remove("open");
+    document.querySelector("body").classList.remove("offcanvas_container");
+  }
+}
+//#endregion

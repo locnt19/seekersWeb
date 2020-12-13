@@ -1,0 +1,114 @@
+
+.offcanvas
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  opacity: 0
+  visibility: hidden
+  transition: all .25s ease-in-out
+  z-index: 1000
+  &_container // sẽ được thêm vào <body> bằng JS
+    position: relative
+    left: 0
+    transition: left .35s ease-out
+    box-sizing: border-box
+    width: 100%
+    overflow: hidden
+  &_overlay
+    width: 100vw
+    touch-action: none
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: rgba(0, 0, 0, .5)
+      opacity: 0
+      transition: opacity .15s linear
+  &.open
+    opacity: 1
+    visibility: visible
+    &.offcanvas_overlay::before
+      opacity: 1
+    .offcanvas_bar
+      left: 0
+  &_bar
+    position: absolute
+    top: 0
+    bottom: 0
+    left: -270px
+    box-sizing: border-box
+    width: 270px
+    background: $yellow-1
+    overflow-y: auto
+    transition: left .3s ease-out
+  &_header
+    display: flex
+    align-items: center
+    justify-content: center
+    min-height: 60px // height của navbar mobile
+    background: #fff
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .5)
+    text-align: center
+    &__logo
+      max-width: 100%
+      height: 28px
+  &_nav
+    list-style: none
+    margin: 0
+    padding: 15px
+    color: $text
+    font-size: .875rem
+    line-height: 1.5
+    &__divider
+      margin: 15px 0
+      height: 0
+      border: 0
+      border-top: 1px solid rgba(#fff,.5)
+      box-sizing: content-box
+    &__link
+      padding: 5px 0
+      display: block
+      &.has_navsub
+        position: relative
+        padding-right: 16px
+        &::before,
+        &::after
+          content: ''
+          box-sizing: content-box
+          width: 14px
+          height: 0
+          border: 0
+          border-top: 1px solid #fff
+          position: absolute
+          top: 19px
+          right: 0
+        &::after
+          transform: rotate(90deg)
+        &.show::after
+          transform: rotate(0)
+    a
+      color: inherit
+      text-decoration: none !important
+  &_nav__sub
+    padding: 0
+    margin: 0
+    margin-left: 25px
+    list-style: none
+    overflow: hidden // animation hover
+    max-height: 0 // animation hover
+    transition: max-height .35s ease-out // animation hover
+    &.show
+      max-height: 500px // animation hover
+      transition: max-height .35s ease-in // animation hover
+  &_icons
+    font-size: 1.15rem
+    display: inline-block
+    margin-right: 8px
+  &_button
+    &__open
+      font-size: 24px
+      color: inherit
