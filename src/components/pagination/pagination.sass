@@ -1,9 +1,18 @@
+.pagination__container
+  justify-content: center
+  @media screen and ( min-width: 768px )
+    justify-content: flex-end
 .pagination__link
-  width: 45px
-  height: 45px
+  width: 32px
+  height: 32px
+  font-size: 14px
   transition: all .3s
   + .pagination__link
     margin-left: 15px
   &:hover,
   &.active
     background: $yellow-1
+  @media screen and ( min-width: 576px )
+    width: 45px
+    height: 45px
+    font-size: 16px
