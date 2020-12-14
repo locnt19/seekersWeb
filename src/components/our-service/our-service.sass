@@ -1,20 +1,34 @@
 .our_service
   &__item
-    &:hover
-      text-decoration: none
-      .our__service__item--title
-        transition: all .3s
-        text-decoration: underline
-        color: $yellow-1
+    display: flex
+    flex-direction: column
+    transition: all .3s
+    @media screen and ( min-width: 576px )
+      flex-direction: row
+      &:hover
+        box-shadow: 0 0 22px 0 rgba($gray-4, .5)
+        text-decoration: none
+        background: $white-1
+        .our__service__item--title
+          transition: all .3s
+          text-decoration: underline
+          color: $yellow-1
   &__item--icon
     position: relative
-    height: 120px
-    flex: 0 0 120px
-    max-width: 120px
-    border-right: 1px solid $white-3
+    height: 96px
+    flex: 0 0 96px
+    max-width: 96px
+    @media screen and ( min-width: 576px )
+      border-right: 1px solid $white-3
+      height: 120px
+      flex: 0 0 120px
+      max-width: 120px
     img
-      width: 74px
-      height: 74px
+      width: 56px
+      height: 56px
+      @media screen and ( min-width: 576px )
+        width: 74px
+        height: 74px
   &__tab--item
     cursor: pointer
     transition: all .3s

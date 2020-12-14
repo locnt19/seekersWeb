@@ -52,7 +52,7 @@ function LazyLoadFunction() {
 function swiper() {
   new Swiper(".swiper__customer .swr__carousel .swiper-container", {
     speed: 1000,
-    slidesPerView: 4,
+    slidesPerView: 1,
     loop: true,
     //#region lazy load swiper
     preloadImages: false,
@@ -87,6 +87,17 @@ function swiper() {
         return number;
       },
     },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    },
   });
 
   new Swiper(".news__container .swr__carousel .swiper-container", {
@@ -112,7 +123,7 @@ function swiper() {
   });
 
   new Swiper(".banner__container.swiper-container", {
-    speed: 1500,
+    speed: 1000,
     slidesPerView: 1,
     loop: true,
     simulateTouch: false,
@@ -133,6 +144,11 @@ function swiper() {
     navigation: {
       nextEl: ".banner__container .swr__button--next",
       prevEl: ".banner__container .swr__button--prev",
+    },
+    breakpoints: {
+      768: {
+        speed: 1500,
+      },
     },
   });
 
