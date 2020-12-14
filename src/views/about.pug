@@ -4,7 +4,7 @@ block var
   -var title = 'Seekers | About'
 
 block main
-  .banner__page(style="background-image: url('./img/Banner/10_h.jpg')")
+  .banner__page(class="lazy" data-bg="./img/Banner/10_h.jpg")
     .banner__page--content
       .container
         .row
@@ -17,7 +17,7 @@ block main
                 a(href="#").breadcrumb__link STRATEGY
               li.breadcrumb__item
                 a(href="#").breadcrumb__link ABOUT US
-  .about__page
+  .about__page(class="lazy" data-bg="./img/background-image.jpg")
     .container.padding-y-64.padding-y-sm-84
       .about__page__content.row
         .col-sm-5
@@ -41,29 +41,29 @@ block main
           p It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           p.mb-0 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage
     .border-top-yellow
-      img.w-100(src="./img/aboutlf_imagecap1.jpg" alt="aboutlf_imagecap1.jpg")
+      img.w-100(class="lazy" data-src="./img/aboutlf_imagecap1.jpg" alt="aboutlf_imagecap1.jpg")
     .container.padding-y-64.padding-y-sm-84
       .row
         .col-10.col-sm-8.contact__page__content.mx-auto
-          img(src="./img/seekers-logo-icon.svg" alt="seekers-logo-icon.svg")
+          img(class="lazy" data-src="./img/seekers-logo-icon.svg" alt="seekers-logo-icon.svg")
           h2 Everyone within our business understands our mission
           p It means we don’t just come to work to do a job, we come to work to make a difference.
       .row.margin-top-32
         .col-10.col-sm-4.text-center.mb-3.mb-sm-0.mx-auto
           .about__page--icon.mb-3
-            img(src="./img/icon07.png" alt="icon07.png")
+            img(class="lazy" data-src="./img/icon07.png" alt="icon07.png")
           .about__page__content--icon
             h3 Commitment
             p Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
         .col-10.col-sm-4.text-center.mb-3.mb-sm-0.mx-auto
           .about__page--icon.mb-3
-            img(src="./img/icon08.png" alt="icon08.png")
+            img(class="lazy" data-src="./img/icon08.png" alt="icon08.png")
           .about__page__content--icon
             h3 Proximity
             p Has survived not only five centuries, but asalso the leap into electronic typesetting, remaining essentially unchanged. Popularised in the 1960s with the release of Letraset
         .col-10.col-sm-4.text-center.mx-auto
           .about__page--icon.mb-3
-            img(src="./img/icon09.png" alt="icon09.png")
+            img(class="lazy" data-src="./img/icon09.png" alt="icon09.png")
           .about__page__content--icon
             h3 Excellence
             p Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -122,21 +122,21 @@ block main
             .swiper-wrapper
               .swiper-slide.swr__carousel--item.p-3
                 a(href="#")
-                  img.swiper-lazy(data-src="./img/logo/logo04.jpg", alt="logo04.jpg")
+                  img.swiper-lazy(data-src="./img/logo/logo04.jpg" alt="logo04.jpg")
                 .swiper-lazy-preloader
               .swiper-slide.swr__carousel--item.p-3
                 a(href="#")
-                  img.swiper-lazy(data-src="./img/customer/customer-2.png", alt="customer/customer-2.png")
+                  img.swiper-lazy(data-src="./img/customer/customer-2.png" alt="customer/customer-2.png")
                 .swiper-lazy-preloader
               .swiper-slide.swr__carousel--item.p-3
                 a(href="#")
-                  img.swiper-lazy(data-src="./img/logo/logo01.jpg", alt="logo01.jpg")
+                  img.swiper-lazy(data-src="./img/logo/logo01.jpg" alt="logo01.jpg")
                 .swiper-lazy-preloader
               .swiper-slide.swr__carousel--item.p-3
                 a(href="#")
-                  img.swiper-lazy(data-src="./img/logo/logo03.jpg", alt="logo03.jpg")
+                  img.swiper-lazy(data-src="./img/logo/logo03.jpg" alt="logo03.jpg")
                 .swiper-lazy-preloader
               .swiper-slide.swr__carousel--item.p-3
                 a(href="#")
-                  img.swiper-lazy(data-src="./img/customer/customer-4.png", alt="customer/customer-4.png")
+                  img.swiper-lazy(data-src="./img/customer/customer-4.png" alt="customer/customer-4.png")
                 .swiper-lazy-preloader

@@ -4,7 +4,7 @@ block var
   -var title = 'Seekers | News view'
 
 block main
-  .banner__page(style="background-image: url('./img/Banner/8-1.jpg')")
+  .banner__page(class="lazy" data-bg="./img/Banner/8-1.jpg")
     .banner__page--content
       .container
         .row
@@ -17,7 +17,7 @@ block main
                 a(href="#").breadcrumb__link STRATEGY
               li.breadcrumb__item
                 a(href="#").breadcrumb__link News - Events
-  .detail__page.padding-bottom-30.padding-bottom-md-84
+  .detail__page(class="lazy" data-bg="./img/background-image.jpg").padding-bottom-30.padding-bottom-md-84
     .container
       .row
         .col.padding-top-md-90.margin-right-lg-70
@@ -30,7 +30,7 @@ block main
               strong
                 i Design is our playground. While we create an awesome experience, we like having fun. No animals were harmed, no bridges were burned during our parties. Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed do although blessing he juvenile in. Society or if excited forbade.
             p Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum with desktop publishing software.
-            img(src="./img/news01.jpg", alt="news01.jpg")
+            img(data-src="./img/news01.jpg" alt="news01.jpg")
             p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
             p
               | Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum”  
@@ -40,10 +40,10 @@ block main
               strong
                 i “Lorem ipsum dolor sit amet..”
               | , comes from a line in section 1.10.32.
-            img(src="./img/10_h.jpg", alt="10_h.jpg")
+            img(data-src="./img/10_h.jpg" alt="10_h.jpg")
             p The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum” by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
             p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            img(src="./img/18_fullhd.jpg", alt="18_fullhd.jpg")
+            img(data-src="./img/18_fullhd.jpg" alt="18_fullhd.jpg")
             p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
             p It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
           .detail__page__share.margin-top-32
@@ -132,21 +132,21 @@ block main
           .swiper-container
             .swiper-wrapper
               .swiper-slide.swr__carousel--item
-                a(href="#" style="background-image: url(img/10_h.jpg)").news__image.background-image.box-4x3.mb-3
+                a(href="#" class="lazy" data-bg="./img/10_h.jpg").news__image.background-image.box-4x3.mb-3
                   .hover-icon.hover-shadow-yellow.strategy__image--next.font-size-20.border-circle.background-yellow.d-flex.justify-content-center.align-items-center
                     i.fas.fa-chevron-right
                 a(href="#").d-inline-block.hover-link.color-title.font-size-22.font-medium.mb-3 Successful Recertification According to ISO 14001 and 22000
                 p.d-inline-block.color-title.font-size-14.font-bold.underline-yellow.mb-3 November 25, 2020
                 p.color-gray-1.font-size-15 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries
               .swiper-slide.swr__carousel--item
-                a(href="#" style="background-image: url(img/1-4-1.jpg)").news__image.background-image.box-4x3.mb-3
+                a(href="#" class="lazy" data-bg="./img/1-4-1.jpg").news__image.background-image.box-4x3.mb-3
                   .hover-icon.hover-shadow-yellow.strategy__image--next.font-size-20.border-circle.background-yellow.d-flex.justify-content-center.align-items-center
                     i.fas.fa-chevron-right
                 a(href="#").d-inline-block.hover-link.color-title.font-size-22.font-medium.mb-3 The 1500s when an unknown printer took a galley of type and scrambled
                 p.d-inline-block.color-title.font-size-14.font-bold.underline-yellow.mb-3 November 25, 2020
                 p.color-gray-1.font-size-15 Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries
               .swiper-slide.swr__carousel--item
-                a(href="#" style="background-image: url(img/news04.jpg)").news__image.background-image.box-4x3.mb-3
+                a(href="#" class="lazy" data-bg="./img/news04.jpg").news__image.background-image.box-4x3.mb-3
                   .hover-icon.hover-shadow-yellow.strategy__image--next.font-size-20.border-circle.background-yellow.d-flex.justify-content-center.align-items-center
                     i.fas.fa-chevron-right
                 a(href="#").d-inline-block.hover-link.color-title.font-size-22.font-medium.mb-3 Has survived not only five centuries, but also the leap into electronic

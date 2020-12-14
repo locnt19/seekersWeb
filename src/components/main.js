@@ -46,7 +46,11 @@ function LazyLoadFunction() {
   var lazyLoad = new LazyLoad({
     elements_selector: ".lazy",
   });
+  var lazyLoadDetailContent = new LazyLoad({
+    elements_selector: ".detail__page__content img",
+  });
   lazyLoad.update();
+  lazyLoadDetailContent.update();
 }
 
 function swiper() {

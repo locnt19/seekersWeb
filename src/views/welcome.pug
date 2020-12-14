@@ -4,7 +4,7 @@ block var
   -var title = 'Seekers | Welcome'
 
 block main
-  .banner__page(style="background-image: url('./img/Banner/Unknown-7.jpg')")
+  .banner__page(class="lazy" data-bg="./img/Banner/Unknown-7.jpg")
     .banner__page--content
       .container
         .row
@@ -20,7 +20,7 @@ block main
                 a(href="#").breadcrumb__link STRATEGY
               li.breadcrumb__item
                 a(href="#").breadcrumb__link WELCOME / STRATEGIC DIRECTION
-  .welcome__page.padding-y-64.padding-y-sm-84
+  .welcome__page(class="lazy" data-bg="./img/background-image.jpg").padding-y-64.padding-y-sm-84
     .container
       .welcome__page__content.row
         .col-md-5
@@ -32,7 +32,7 @@ block main
           p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage
       .row.margin-top-32
         .col-12
-          img.w-100(src="./img/welcome-1.png" alt="welcome-1.png")
+          img.lazy.w-100(data-src="./img/welcome-1.jpg" alt="welcome-1.jpg")
       .welcome__page__content.row.margin-top-32
         .col-md-7.font-size-16.color-dark-6.ml-auto
           p Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
@@ -51,7 +51,7 @@ block main
           p All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words
       .row.margin-top-32
         .col-12
-          img.w-100(src="./img/welcome-2.png" alt="welcome-2.png")
+          img.lazy.w-100(data-src="./img/welcome-2.jpg" alt="welcome-2.jpg")
       .welcome__page__content.row.margin-top-32
         .col-md-7.font-size-16.color-dark-6.ml-auto
           p Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
