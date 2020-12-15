@@ -3,6 +3,24 @@
     &__button
       width: 50px
       height: 40px
-.news__image:hover
-  .strategy__image--next
-    box-shadow: 0 0 10px 0 $yellow-1
+.news__image
+  position: relative
+  &::before
+    transition: all .3s
+    content: ""
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+  &--next
+    width: 50px
+    height: 50px
+    position: absolute
+    bottom: 30px
+    right: 30px
+  &:hover
+    &::before
+      background-color: rgba($black, .45)
+    .strategy__image--next
+      box-shadow: 0 0 10px 0 $yellow-1
