@@ -132,19 +132,12 @@ function swiper() {
     loop: true,
     simulateTouch: false,
     //#region effect
-    effect: "coverflow",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
+    effect: 'fade',
+    //#endregion
     autoplay: {
-      delay: 5000,
+      delay: 3000,
       disableOnInteraction: false,
     },
-    //#endregion
     navigation: {
       nextEl: ".banner__container .swr__button--next",
       prevEl: ".banner__container .swr__button--prev",
@@ -152,6 +145,10 @@ function swiper() {
     breakpoints: {
       768: {
         speed: 1500,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
       },
     },
   });
