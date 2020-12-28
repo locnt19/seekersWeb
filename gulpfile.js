@@ -103,7 +103,7 @@ gulp.task('import:js', function () {
         presets: ['@babel/preset-env'],
       })
     )
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(srcmap.write('.'))
     .pipe(
       rename({
